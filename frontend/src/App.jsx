@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./App.css";
 
+const API_URL = "https://resume-analyzer-g9kd.onrender.com";
+
 function App() {
   const [file, setFile] = useState(null);
   const [fileName, setFileName] = useState("");
@@ -31,7 +33,7 @@ function App() {
     setLoading(true);
 
     try {
-      const response = await fetch("https://resume-analyzer-g9kd.onrender.com", {
+      const response = await fetch(`${API_URL}/analyze-resume`, {
         method: "POST",
         body: formData,
       });
