@@ -13,7 +13,7 @@ load_dotenv()
 # Get CORS origins from environment
 cors_origins = os.getenv(
     "CORS_ORIGINS",
-    "http://localhost:5173,http://localhost:3000,http://127.0.0.1:5173"
+    "https://resume-analyzer-1-qwp0.onrender.com/"
 ).split(",")
 
 # Clean up whitespace
