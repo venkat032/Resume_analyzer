@@ -31,7 +31,7 @@ function App() {
     setLoading(true);
 
     try {
-      const response = await fetch("https://resume-analyzer-g9kd.onrender.com/", {
+      const response = await fetch("https://resume-analyzer-g9kd.onrender.com", {
         method: "POST",
         body: formData,
       });
